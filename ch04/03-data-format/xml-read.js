@@ -4,8 +4,8 @@ var Iconv = require('iconv').Iconv;
 var euckr2utf8 = new Iconv('EUC-KR', 'UTF-8');
 
 
-var xml = fs.readFileSync(__dirname + "\\news_00.xml");
-var xmlutf8 = euckr2utf8.convert(xml);
+var xmlgon = fs.readFileSync(__dirname + "\\news_00.xml");
+var xmlutf8 = euckr2utf8.convert(xmlgon);
 
 $ = cheerio.load(xmlutf8, {xmlMode: true});
 

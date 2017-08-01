@@ -2,7 +2,7 @@ var casper = require('casper').create({verbose: true, logLevel: "debug"});
 
 var url = "http://www.slrclub.com/";
 var id = "hanaarmi";
-var pw = "wjdrhs79";
+var pw = "";
 
 casper.start();
 
